@@ -8,6 +8,10 @@ playerPath="C:/Program Files/MPC-HC/mpc.exe"
 # name of folder for execute by default
 name="Season"
 
+if test "$1" != ""
+then
+	name=$1
+fi
 
 findAndRunMedia(){
 shopt -s globstar
@@ -29,5 +33,3 @@ done
 
 cd $mainPath
 findAndRunMedia
-
-read "dsfsdf"
