@@ -2,8 +2,10 @@
 
 
 # main folder/disc with media
-path=D:
-# name of folder for execute
+mainPath=D:
+# path to player
+playerPath="C:/Program Files/MPC-HC/mpc.exe"
+# name of folder for execute by default
 name="Season"
 
 
@@ -16,7 +18,7 @@ do
 
     # before add mpc player to PATH
     # from bash don't work "fullscreen" flag
-    echo "mpc \"$path/$firstFolder/$j\" /fullscreen /playnext" > wake_up.cmd
+    echo "\"$playerPath\" \"$mainPath/$firstFolder/$j\" /fullscreen /playnext" > wake_up.cmd
     ./wake_up.cmd
     #remove after close
     rm wake_up.cmd
@@ -25,5 +27,7 @@ do
 done
 }
 
-cd $path
+cd $mainPath
 findAndRunMedia
+
+read "dsfsdf"
