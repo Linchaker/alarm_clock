@@ -32,8 +32,8 @@ Windows
 1. Триггер: При входе в систему.
 2. Действие: Передать путь к CMD c параметрами.
 Например:
-По умолчанию: C:\Windows\System32\cmd.exe /C "E:\pc_alarm_clock\src\wake_up.cmd"
-Симпсоны с утра: C:\Windows\System32\cmd.exe /C "E:\pc_alarm_clock\src\wake_up.cmd Simpsons"
+По умолчанию: C:\Windows\System32\cmd.exe /C "E:\pc_alarm_clock\src\wake_up.cmd".
+Симпсоны с утра: C:\Windows\System32\cmd.exe /C "E:\pc_alarm_clock\src\wake_up.cmd Simpsons".
 
 ## Недостатки / Требует доработки
 
